@@ -11,14 +11,14 @@ function logAttendeeName(attendee) {
   console.log(attendee.name);
 }
 function logTicketPrice(attendee) {
-  console.log(ticketP)
+  console.log(attendee.ticketPrice);
 }
 function updateTicketType(attendee, newTicketType) {
   attendee.ticketType = newTicketType;
 
 }
 function updateTicketPrice(attendee, newPrice) {
-  attendee.ticketPrice
+  attendee.ticketPrice = newPrice;
 }
 function removeEventProperty(attendee) {
   delete attendee.event;
@@ -26,7 +26,7 @@ function removeEventProperty(attendee) {
 
 }
 function addCheckedInProperty(attendee) {
-  attendee.checkedIn = "true"
+  attendee.checkedIn = true;
 }
 //Needed for the tests to work. Don't modify
 module.exports = {
